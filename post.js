@@ -18,11 +18,11 @@ const loadAllPosts = async () => {
           </div>
           <div class="card-body space-y-4">
               <div class="flex flex-row justify-around gap-5 font-inter text-[14px] text-[#3a3a3f]">
-                  <p class="inline-block"># ${item.category}</p>
-                  <p class="inline-block">Author: ${item.author.name}</p>
+                  <p class="inline-block font-mulish"># ${item.category}</p>
+                  <p class="inline-block font-mulish">Author: ${item.author.name}</p>
               </div>
-              <h2 class="card-title font-extrabold text-xl">${item.title}</h2>
-              <p class="font-inter text-[16px] text-gray-500">${item.description}</p>
+              <h2 class="card-title font-extrabold text-xl font-mulish">${item.title}</h2>
+              <p class="font-inter text-[16px] font-inter text-gray-500">${item.description}</p>
               <hr class="border-dashed border-2 border-gray-400">
               <div class="flex justify-between">
                   <!-- left -->
@@ -74,10 +74,10 @@ const loadCategoryPosts = async (categoryName) => {
               </div>
               <div class="card-body space-y-4">
                   <div class="flex flex-row justify-around gap-5 font-inter text-[14px] text-[#3a3a3f]">
-                      <p class="inline-block"># ${item.category}</p>
-                      <p class="inline-block">Author: ${item.author.name}</p>
+                      <p class="inline-block font-mulish"># ${item.category}</p>
+                      <p class="inline-block font-mulish">Author: ${item.author.name}</p>
                   </div>
-                  <h2 class="card-title font-extrabold text-xl">${item.title}</h2>
+                  <h2 class="card-title font-mulish font-extrabold text-xl">${item.title}</h2>
                   <p class="font-inter text-[16px] text-gray-500">${item.description}</p>
                   <hr class="border-dashed border-2 border-gray-400">
                   <div class="flex justify-between">
