@@ -126,7 +126,7 @@ const showPostRead = (buttonElement, title, view_count) => {
   const postRead = document.getElementById('post-read');
 
   const div1 = document.createElement('div');
-  div1.classList = `flex flex-row gap-5 bg-white rounded-2xl m-2`;
+  div1.classList = `flex flex-row gap-5 bg-white rounded-2xl mt-4`;
   div1.innerHTML = `
       <div>
           <p class="p-4 font-mulish text-[#12132D] text-[16px] font-semibold">${title}</p>
