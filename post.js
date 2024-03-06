@@ -11,7 +11,7 @@ const loadAllPosts = async () => {
       div.classList = `card flex flex-row bg-gray-200 rounded-[24px]`;
       div.innerHTML = `
           <div class="indicator mt-8 ml-8">
-              <span class="indicator-item bg-red-600 badge badge-secondary"></span> 
+              <span class="indicator-item bg-red-600 border-none badge badge-secondary"></span> 
               <div class="grid w-20 h-20 bg-base-300 place-items-center">
                   <img class="rounded-[16px]" src="${item.image}" alt="">
               </div>
@@ -67,7 +67,7 @@ const loadCategoryPosts = async (categoryName) => {
           div.classList = `card flex flex-row bg-gray-200 rounded-[24px]`;
           div.innerHTML = `
               <div class="indicator mt-8 ml-8">
-                  <span class="indicator-item bg-red-600 badge badge-secondary"></span> 
+                  <span class="indicator-item bg-red-600 border-none badge badge-secondary"></span> 
                   <div class="grid w-20 h-20 bg-base-300 place-items-center">
                       <img class="rounded-[16px]" src="${item.image}" alt="">
                   </div>
@@ -168,16 +168,11 @@ const loadPost2= async ()=> {
 
 // display latest posts
 const displayLatestPost= latestPost =>{
-    // console.log(latestPost);
-
-// latPost-container
 
 const latPostContainer=document.getElementById('latPost-container')
 
     latestPost.forEach(post =>{
-        // console.log(post);
-
-        // create a div
+   
         
         const latestPostCard=document.createElement('div');
         latestPostCard.classList=`card bg-base-100 shadow-xl p-4 m-4`;
